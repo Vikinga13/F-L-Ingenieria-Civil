@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="../Index.html" class="nav-link">Inicio</a>
+            <a href="./servicios.html" class="nav-link">Servicios</a>
+            <a href="./nosotros.html" class="nav-link">Nosotros</a>
+            <a href="./proyectos.html" class="nav-link">Proyectos</a>
+            <a href="./contacto.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="consulta">Dejanos tu consulta</h2><br>
+        <form action="" class="contenedor-formulario">
+            <div class="formulario">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="formulario">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formulario">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="formulario">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <div class="formulario">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+<!--boostrap-->
+            <!-- Botón para abrir el modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successModal">
+                Enviar
+            </button>
+
+        </form>  
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="successModalLabel">
+                <i class="fas fa-check-circle icono-check"></i>
+                Mensaje enviado
+            </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+        ¡Gracias por contactarnos! Hemos recibido tu mensaje.
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+        <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53608.97862573531!2d-68.89971894746574!3d-32.88332844621838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1729712825173!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    
+    <footer> 
+        <section class="footer">   <!-- Pie de Página -->
+            <section class="footer-logo">  <!-- Logo -->
+                <img src="../img/logo.png" alt="Logo" class="logo">
+            </section>
+            <section class="footer-about">  <!-- Sobre Nosotros -->
+                <h2>Sobre Nosotros</h2>
+                <p>Ofrecemos soluciones innovadoras en ingeniería civil con un enfoque en la sostenibilidad y la eficiencia.</p>
+                <p>Contáctanos: <a href="mailto:forte&lella.ing.civil@gmail.com">forte&lella.ing.civil@gmail.com</a></p>
+            </section>
+            <section class="footer-social">  <!-- Redes Sociales -->
+                <h2>Síguenos</h2>
+                <a href="https://whatsapp.com/" target="_blank">
+                    <img src="../img/whatsapp.png" alt="logo whatsapp"> Whatsapp
+                </a>
+                <a href="https://www.instagram.com/?hl=es" target="_blank">
+                    <img src="../img/instagram.png" alt="logo instagram"> Instagram
+                </a>
+            </section>
+            <section class="footer-map">  <!-- Mapa -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53608.97862573531!2d-68.89971894746574!3d-32.88332844621838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1729712825173!5m2!1ses-419!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="footer-rights">  <!-- Derechos Reservados -->
+                <p>&copy; 2024 F&L-Ingeniería Civil. Todos los derechos reservados.</p>
+            </section>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
