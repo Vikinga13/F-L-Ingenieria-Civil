@@ -1,11 +1,11 @@
 <h1 align="center">Hola 👋, soy Victoria Tosatti</h1>
-<h3 align="center">Una apasionada desarrolladora full stack de Argentina 🌎 . Acerca de mí 👩 💻: Soy un desarrollador full-stack en formación, con una sólida experiencia en liderazgo de equipos y un enfoque creativo para resolver problemas. Vengo del mundo del arte, lo que me da una perspectiva única para diseñar y construir soluciones web que combinen funcionalidad y estética. Mi objetivo es crear experiencias digitales intuitivas y eficientes, con especial atención al detalle y optimización profesional.</h3>
+<h3 align="center">Una apasionada desarrolladora full stack de Argentina 🌎 . Acerca de mí 👩 💻: Soy una desarrolladora full-stack en formación, con una sólida experiencia en liderazgo de equipos y un enfoque creativo para resolver problemas. Vengo del mundo del arte, lo que me da una perspectiva única para diseñar y construir soluciones web que combinen funcionalidad y estética. Mi objetivo es crear experiencias digitales intuitivas y eficientes, con especial atención al detalle y optimización profesional.</h3>
 
 - 🔭 Actualmente estoy trabajando en **F&L Ingenieria Civil**-
 
 📫 Cómo contactarme **vicky.tosatti@gmail.com**
 
-- ⚡ Dato ⚡ curioso, Viking es mi perro ❤️ **
+- ⚡ Dato ⚡ curioso, Vikinga es mi perra ❤️ **
 
 <h3 align="left">Conéctate conmigo: </h3>
 <p align="left">
