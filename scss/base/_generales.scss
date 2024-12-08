@@ -1,0 +1,235 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px groove; 
+    background-color: $color-1;
+    section{
+        .logo{
+            height: 160px; 
+            margin-left: 15px;
+            padding: 15px;
+            transition: 1s;
+        }
+        .logo-nav{
+            margin-left:  20%;
+        }
+    }
+    nav{
+        display: flex;
+        gap: 15px; 
+        margin-right: 3%;
+        .nav-link{
+                
+                padding: 10px 20px;
+                color: $color-4 ; 
+                background-color: $color-1; /* COLOR DEL BOTON */
+                border-radius: 20px; 
+                box-shadow: 2px 2px 5px $color-2; /* SOMBRA*/
+                text-decoration: none;
+                font-weight: bold;
+                margin-right: 20px;
+                 //  mixin 
+                @include transition-background;
+                &:hover{
+                    background-color: $color-3;
+                }   
+            }
+    }
+}
+
+.hero{
+    height:500px;
+    text-align: center;
+    color:$color-4; 
+    background-image: url("../img/Banner.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    h2{
+        font-size: 50px;
+        padding:30px;
+    }
+    .boton-contacto{
+        background-color:$color-3;
+        text-decoration:none;     
+        color:$color-4;
+        padding: 12px;
+        border-radius: 20px;
+    }
+}
+
+/* servicios index */
+.servicios-contenedor{
+    display: flex;
+    flex-direction: column; /* Hace que el título esté encima de las tarjetas */
+    align-items: center; 
+    padding: 2rem;
+    background-color:$color-1; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h2{
+        font-size: 2rem; 
+        color: $color-4; 
+        margin-bottom: 2rem; /* Espacio entre el título y las tarjetas */
+        text-align: center; 
+    }
+    .tarjetas{
+        display: flex; /* Alinea las tarjetas en una fila */
+        justify-content: center; 
+        gap: 1rem; 
+        flex-wrap: wrap; 
+        .tarjeta-servicio{
+            background-color: #004080; 
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 300px;
+            padding: 1rem;
+            color: $color-4;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            }
+            .imagen-servicio{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-bottom: 4px solid $color-3; 
+            }
+            h3{
+                margin: 1rem 0 0;
+                font-size: 1.5rem;
+                color: $color-4; 
+            }
+        }
+    }
+}
+
+/* --GRID-- */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-auto-rows: 200px; /* Altura base de las filas */
+    gap: 15px;
+    max-width: 1000px; /* Ancho máximo de la galería */
+    margin: 0 auto; /* Centra la galería */
+    margin-bottom: 20px;
+
+    img {
+    width: 100%; /* Ajusta las imágenes al ancho disponible */
+    height: 100%; /* Ajusta las imágenes a la altura de la celda */
+    object-fit: cover; /* Recorta las imágenes para que encajen */
+    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza los efectos */
+    border-radius: 8px;
+    /*! Distribución de las imágenes */
+    /* Imagen 1 (Vertical) */
+        &:nth-child(1) {
+            grid-column: span 2; /* Ocupa dos columnas */
+            grid-row: span 2; /* Ocupa dos filas */
+        }
+
+        /* Imagen 2 (Vertical) */
+        &:nth-child(2) {
+            grid-column: span 1; /* Ocupa una columna */
+            grid-row: span 2; /* Ocupa dos filas */
+        }
+
+        /* Imagen 3 (Horizontal) */
+        &:nth-child(3) {
+            grid-column: span 2; /* Ocupa dos columnas */
+            grid-row: span 1; /* Ocupa una fila */
+        }
+
+        /* Imagen 4 (Cuadrada) */
+        &:nth-child(4) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        /* Imagen 5 (Horizontal) */
+        &:nth-child(5) {
+            grid-column: span 3;
+            grid-row: span 1;
+        }
+
+        /* Efecto al pasar el cursor */
+        &:hover {
+            transform: scale(1.05); /* Pequeño zoom */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar */
+        }
+    }
+}
+/*fundadores*/
+.fundadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;           
+    padding: 20px;
+    .titulo-especial{
+        border-radius: 20px;
+        background-color: $color-1;
+        color: $color-4;
+        width: 100%;
+        padding: 10px;
+        text-align: center;   
+        font-size: 180%;
+    }
+    .seccion-fundadores{
+        display: flex;                 
+        gap: 20px;                     
+        justify-content: center;       
+        align-items: flex-start;       
+        flex-wrap: wrap;               
+        padding: 20px;
+        .resumen-julian , .resumen-alejandro{
+            width: 45%;                    
+            background-color: $color-1;     
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(3, 3, 3, 0.1);
+            border-radius: 8px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 50%;  
+            width: 200px;   
+            height: 200px;             
+            border-radius: 8px; 
+        }
+        h3{
+            margin-top: 10px;
+            color:$color-4;
+            font-size: 150%;
+            
+        }
+        
+        p {
+            margin-top: 10px;
+            text-align: justify;
+            color: $color-4;
+        }
+    }
+}
+/* Boton asistente */
+.fixed{  
+    position: fixed;
+    bottom: 50px;
+    right:65px;
+}
+
+
+
+
+
+

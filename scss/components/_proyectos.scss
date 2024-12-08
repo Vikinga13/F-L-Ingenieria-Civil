@@ -1,0 +1,83 @@
+.proyectos{
+    background-color:$color-1;
+    color: $color-4;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(3, 3, 3, 0.1);
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 80%;
+    margin-bottom: 30px;
+    h2{
+        background-color: $color-1;
+        color: $color-4;
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    /* Estilos del acordeón */
+    .accordion {
+    background-color:$color-5;
+    color: $color-4;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion:hover {
+    background-color: #006fa1;
+    }
+
+    /* Contenido del acordeón BOOSTRAP */
+    .accordion-content {
+    padding: 0 18px;
+    background-color: $color-4;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 16px;
+    color: #333;
+    }
+
+    .accordion-content ul {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .accordion-content li {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .accordion-content li::before {
+        content: "•";
+        color:$color-5;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    /* Efecto para abrir el acordeón */
+    input[type="checkbox"]:checked + .accordion + .accordion-content {
+        max-height: 500px;
+        padding: 18px;
+    }
+
+    /* Estilo adicional */
+    .accordion-item {
+        margin-bottom: 15px;
+    }
+}

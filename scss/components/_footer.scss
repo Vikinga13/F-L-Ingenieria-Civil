@@ -1,0 +1,73 @@
+footer{
+    background-color:  $color-1; 
+    color: $color-4; 
+    padding: 20px;
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+        .footer-logo{
+            flex: 1 1 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo{
+                max-width: 300px; 
+            }
+        }
+    }
+    .footer-about{
+        flex: 2 1 250px;
+        padding: 10px;
+        h2{
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+    }
+    .footer-social{
+        flex: 1 1 150px;
+        padding: 10px;
+        h2{
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            color: $color-4;
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+            &:hover{
+                color: $color-3   ; /* Cambia a color en hover */
+            }
+            img{
+                width: 22px;
+                height: 22px;
+                margin-right: 8px;
+                transition: 1s;
+                &:hover{
+                transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .footer-map{
+        flex: 2 1 300px;
+        iframe{
+            width: 100%;
+             border-radius: 10px; /* BORDES REDONDEADOS EN EL MAPA */
+        }
+    }
+    .footer-rights{
+        flex: 1 1 100%;
+        text-align: center;
+        font-size: 0.9em;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #444; /* LINEA SUPERIOR*/
+    }
+}

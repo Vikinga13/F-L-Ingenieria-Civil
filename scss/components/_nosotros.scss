@@ -1,0 +1,92 @@
+.nosotros{
+    background-color:$color-1;
+    color: $color-4;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 80%;
+    .container{
+        .nosotros-header{
+            text-align: center;
+            margin-bottom: 40px;
+            h1{
+                font-size: 28px;
+                font-weight: bold;
+                color: $color-5;
+            }
+            p{
+                font-size: 18px;
+                color: $color-4;
+                line-height: 1.6;
+            }
+        }
+        .nosotros-contenido{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            .nosotros-texto{
+                .mision-container{
+                    background: linear-gradient(145deg, #1c2e4a, #122238);
+                    border: 1px solid $color-5;
+                    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.4);
+                    border-radius: 12px;
+                    padding: 20px 30px;
+                    text-align: center;
+                    .mision-titulo{
+                        font-size: 26px;
+                        margin-bottom: 15px;
+                        color: $color-5;
+                    }
+                    .mision-texto{
+                        font-size: 18px;
+                        line-height: 1.8;
+                        color: $color-4;
+                    }
+                }
+            }
+            .nosotros-imagen{
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+        .nosotros-equipo{
+            margin-top: 40px;
+            text-align: center;
+            h2{
+                font-size: 26px;
+                color: $color-5;
+                margin-bottom: 20px;
+            }
+            .equipo-fotos{
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                .equipo-miembro{
+                    text-align: center;
+                    color: $color-4;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                        margin-bottom: 10px;
+                    }
+                    h3{
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                        color: $color-5;
+                    }
+                    p{
+                        font-size: 16px;
+                        color:$color-4;
+                    }
+                }
+            }
+        }
+    }
+}

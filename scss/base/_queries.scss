@@ -1,0 +1,636 @@
+/*!-- Media Query --*/
+
+@media screen and (max-width:1075px) {
+    header {
+        flex-direction: column;
+        .logo {  
+            margin-left: 0px;
+        }
+    }
+
+    /* Sección servicios */
+    .servicios {
+        padding: 15px;
+        margin: 20px auto;
+        width: 90%;
+        .servicios h2 {
+            font-size: 20px;
+            padding: 10px;
+        }
+        .servicios p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+
+    /* Sección proyectos */
+    .proyectos {
+        padding: 15px;
+        margin: 20px auto;
+        width: 90%;
+        .proyectos h2 {
+            font-size: 20px;
+            padding: 10px;
+        }
+        .proyectos li {
+            font-size: 14px;
+        }
+    }
+    
+    /* Sección nosotros */
+    .nosotros {
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+        .tarjeta-nosotros h1 {
+            font-size: 22px;
+        }
+        .tarjeta-nosotros p {
+            font-size: 14px;
+        }
+        .tarjeta-nosotros img {
+            margin-top: 15px;
+        }
+        .contenedor-formulario {
+            padding: 15px;
+            gap: 15px;
+            .formulario input,
+            .formulario textarea {
+            font-size: 14px;
+        }
+    
+        button {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+        }
+    }
+    /* Mapa */
+    .map-container {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+        .logo-nav {
+            margin-left: 0;
+        }
+        nav {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .hero {
+        height: 400px;
+        padding: 20px;
+        .hero h2 {
+            font-size: 36px;
+        }
+    }
+
+    .seccion-fundadores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+
+        .footer-logo {
+            flex: 1 1 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo {
+                max-width: 300px;
+            }
+            margin-bottom: 20px; // Agregado aquí
+        }
+
+        .footer-about,
+        .footer-social,
+        .footer-map {
+            margin-top: 20px; // Agregado aquí
+        }
+
+        .footer-social a {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .footer-map {
+            iframe {
+                width: 100%;
+                height: 150px;
+                border-radius: 10px; // Agregado aquí
+            }
+        }
+    }
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr); /* cambio a 2 columnas */
+        grid-auto-rows: 150px;
+           /* Adaptación de las imágenes */
+            &:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            &:nth-child(2) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            &:nth-child(3) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            &:nth-child(4) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            &:nth-child(5) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+    }
+
+        /* Páginas */
+        .servicios,
+        .proyectos,
+        .nosotros {
+            width: 100%;
+            padding: 15px;
+            margin: 20px auto;
+        }
+    
+        .servicios h2,
+        .proyectos h2 {
+            font-size: 18px;
+            padding: 10px;
+        }
+    
+        .servicios p,
+        .proyectos li,
+        .tarjeta-nosotros p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    
+        .contenedor-formulario {
+            padding: 10px;
+            width: 90%;
+        }
+}
+
+@media screen and (max-width: 768px) {
+    .servicios-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 738px) {
+
+    /* Header */
+    header {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        .logo-nav {
+            margin-left: 0;
+            margin-bottom: 10px; 
+        }
+    nav {
+        flex-direction: row; 
+        align-items: center;
+        gap: 10px; 
+        margin-right: 0;
+        margin-bottom: 20px;
+            .nav-link {
+                font-size: 14px; 
+                padding: 8px 15px;
+                margin-right: 0;
+            }
+        }
+    }
+    /* Hero */
+    .hero {
+        height: 400px; 
+        background-position: center; 
+        h2 {
+            font-size: 35px; 
+            padding: 20px;
+        }
+        .boton-contacto {
+            padding: 10px 20px; 
+            font-size: 14px;
+        }
+    }
+
+    /* Servicios */
+    .servicios-contenedor {
+        padding: 1rem; 
+        margin-top: 10px;
+        .tarjetas {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            flex-direction: row; 
+            align-items: center;
+            gap: 1rem;
+            .tarjeta-servicio {
+                width: 80%; 
+                margin: 0 auto; 
+                .imagen-servicio {
+                    width: 150px; 
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    /* Grid Galeria */
+    .grid-galeria {
+        img {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+    
+            &:nth-child(1),
+            &:nth-child(3) {
+                grid-column: span 1; /* Ocupa una columna */
+            }
+    
+            &:nth-child(5) {
+                grid-column: span 2; /* Ocupa dos columnas */
+            }
+        }
+    }
+    /* Fundadores */
+    .fundadores {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .seccion-fundadores {
+        gap: 20px;
+        flex-direction: column; 
+        align-items: center;
+        .resumen-julian, .resumen-alejandro {
+            width: 100%; 
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 120px; 
+                height: 120px;
+        }
+    }
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: row; 
+        text-align: center;
+        padding: 20px;
+        .footer-logo {
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer-about, .footer-social, .footer-map {
+        margin-bottom: 15px;
+    }
+
+    .footer-rights {
+        margin-top: 20px;
+    }
+
+    .footer-social a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Páginas */
+    .servicios, .proyectos, .nosotros {
+        width: 95%; 
+        padding: 10px; 
+        margin: 20px auto; 
+    }
+
+    .servicios h2, .proyectos h2 {
+        font-size: 20px; 
+        padding: 15px;
+    }
+
+    .servicios p, .proyectos li, .tarjeta-nosotros p {
+        font-size: 14px; 
+        line-height: 1.4; 
+    }
+
+    button {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 620px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .logo-nav {
+            margin-left: 0;
+        }
+    
+    nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-right: 0;
+        .nav-link {
+            width: 90%;
+            text-align: center;
+            }
+        }
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        h2 {
+            font-size: 1.8rem;
+        }
+        .boton-contacto {
+            font-size: 1rem;
+            padding: 10px;
+        }
+    }
+
+    .servicios-contenedor {
+        padding: 1rem;
+        .servicios-contenedor h2{
+            font-size: 30px;
+            margin-top: 20px;
+            }
+    }
+
+    .tarjeta-servicio {
+        width: 100%;
+    }
+
+    .seccion-fundadores {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 80%;
+    }
+
+    .titulo-especial {
+        font-size: 25px;
+    }
+    /*paginas*/
+    .servicios,
+    .proyectos,
+    .nosotros {
+        width: 90%; 
+        margin: 20px auto; 
+        padding: 10px; 
+    }
+
+    .servicios h2,
+    .proyectos h2,
+    .nosotros h1 {
+        font-size: 18px; 
+        padding: 10px; 
+    }
+
+    .servicios p,
+    .proyectos li,
+    .nosotros p {
+        font-size: 14px; 
+        line-height: 1.4; 
+    }
+
+    .contenedor-formulario {
+        padding: 15px; 
+        gap: 10px; 
+        button {
+            font-size: 14px; 
+            padding: 8px 15px; 
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        .logo {
+            height: 100px;
+            margin-left: 0;
+            padding: 5px;
+        }
+    
+    nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px; 
+        margin-right: 0;
+        .nav-link {
+                padding: 8px 15px; 
+                font-size: 14px; 
+            }
+        }
+    }
+
+    .hero {
+        height: auto; 
+        padding: 20px; 
+        text-align: center;
+        background-attachment: scroll;
+        .hero h2 {
+            font-size: 1.5rem; 
+        }
+    
+        .hero a {
+            font-size: 14px; 
+            padding: 8px 12px; 
+        }    
+    }
+
+    .servicios-contenedor {
+        padding: 1rem;
+        .tarjetas {
+            flex-direction: column; 
+            gap: 1rem;
+            .tarjeta-servicio {
+                width: 100%; 
+            }
+            .imagen-servicio {
+                width: 100%;
+                height: auto; 
+            }
+            h3{
+                font-size:medium;
+            }
+        }
+    }
+
+    .fundadores {
+        flex-direction: column; 
+        gap: 1rem;
+        .resumen-julian, .resumen-alejandro {
+            flex-direction: column;
+            align-items: center;
+            text-align: center; 
+        }
+        img {
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        
+    .footer-social a {
+        display: block; 
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        width: 100%; 
+    }
+    }
+
+/*paginas*/
+    .servicios, 
+    .proyectos, 
+    .nosotros {
+        padding: 10px; 
+        width: 95%; 
+        margin: 20px auto; 
+    }
+
+    .servicios h2, 
+    .proyectos h2, 
+    .nombre h2 {
+        font-size: 18px; 
+        padding: 10px; 
+    }
+
+    .servicios p, 
+    .proyectos li, 
+    .tarjeta-nosotros p {
+        font-size: 14px; 
+        line-height: 1.4; 
+    }
+    .contenedor-formulario {
+        padding: 10px; 
+        margin:10px;
+        label {
+            font-size: 14px; 
+        }
+        button {
+            padding: 8px 16px; 
+            font-size: 14px; 
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        .logo {
+            height: 100px;
+            margin-left: 0;
+            padding: 5px;
+        }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px; 
+        margin-right: 0;
+        margin-top: 10px;
+        .nav-link {
+                padding: 8px 15px; 
+                font-size: 14px; 
+            }
+        }
+    }
+
+    .servicios-contenedor h2{
+        font-size: large;
+        .tarjeta-servicio {
+            width: 100%; 
+            h3{
+                font-size:small;
+            }
+        }
+    }
+    /*pagina*/
+    .servicios,
+    .proyectos,
+    .nosotros {
+        width: 95%; 
+        margin: 20px auto; 
+        padding: 15px; 
+    }
+
+    .servicios h2,
+    .proyectos h2,
+    .nombre h2 {
+        font-size: 18px; 
+        padding: 10px; 
+    }
+
+    .servicios p,
+    .proyectos li,
+    .tarjeta-nosotros p {
+        font-size: 14px; 
+        line-height: 1.4; 
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 12px; 
+    }
+
+    button {
+        font-size: 14px; 
+        padding: 8px 15px; 
+    }
+}
+
+
+
+
+
+
+
+
+

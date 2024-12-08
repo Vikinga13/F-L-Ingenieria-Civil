@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');    
+
+*{  /*selector universal*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+// Variables
+$color-1:#0b132b;
+$color-2:#0184fe;
+$color-3:#f8030b;
+$color-4:white;
+$color-5:#00aaff;
+
+// Mixin para transición en el color de fondo
+@mixin transition-background($duration: 0.3s, $timing-function: ease) {
+    transition: background-color $duration $timing-function;
+}

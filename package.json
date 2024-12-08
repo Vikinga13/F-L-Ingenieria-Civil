@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-coder-desarrollo-web",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola 👋, soy Victoria Tosatti</h1>\r <h3 align=\"center\">Una apasionada desarrolladora full stack de Argentina 🌎 . Acerca de mí 👩 💻: Soy una desarrolladora full-stack en formación, con una sólida experiencia en liderazgo de equipos y un enfoque creativo para resolver problemas. Vengo del mundo del arte, lo que me da una perspectiva única para diseñar y construir soluciones web que combinen funcionalidad y estética. Mi objetivo es crear experiencias digitales intuitivas y eficientes, con especial atención al detalle y optimización profesional.</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
