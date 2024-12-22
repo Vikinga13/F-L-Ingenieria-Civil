@@ -415,7 +415,7 @@ header nav .nav-link:hover {
   /* Efecto para abrir el acordeón */
   /* Estilo adicional */
 }
-.proyectos h2 {
+.proyectos h1 {
   background-color: #0b132b;
   color: white;
   padding: 20px;
@@ -489,7 +489,7 @@ header nav .nav-link:hover {
   text-align: center;
   /* Grid para los servicios */
 }
-.servicios h2 {
+.servicios h1 {
   font-size: 2.5rem;
   color: #00aaff;
   margin-bottom: 20px;
@@ -615,7 +615,7 @@ footer .footer-rights {
     margin: 20px auto;
     width: 90%;
   }
-  .servicios .servicios h2 {
+  .servicios .servicios h1 {
     font-size: 20px;
     padding: 10px;
   }
@@ -629,7 +629,7 @@ footer .footer-rights {
     margin: 20px auto;
     width: 90%;
   }
-  .proyectos .proyectos h2 {
+  .proyectos .proyectos h1 {
     font-size: 20px;
     padding: 10px;
   }
@@ -757,8 +757,8 @@ footer .footer-rights {
     padding: 15px;
     margin: 20px auto;
   }
-  .servicios h2,
-  .proyectos h2 {
+  .servicios h1,
+  .proyectos h1 {
     font-size: 18px;
     padding: 10px;
   }
@@ -890,7 +890,7 @@ footer .footer-rights {
     padding: 10px;
     margin: 20px auto;
   }
-  .servicios h2, .proyectos h2 {
+  .servicios h1, .proyectos h1 {
     font-size: 20px;
     padding: 15px;
   }
@@ -960,8 +960,8 @@ footer .footer-rights {
     margin: 20px auto;
     padding: 10px;
   }
-  .servicios h2,
-  .proyectos h2,
+  .servicios h1,
+  .proyectos h1,
   .nosotros h1 {
     font-size: 18px;
     padding: 10px;
@@ -1066,8 +1066,8 @@ footer .footer-rights {
     width: 95%;
     margin: 20px auto;
   }
-  .servicios h2,
-  .proyectos h2,
+  .servicios h1,
+  .proyectos h1,
   .nombre h2 {
     font-size: 18px;
     padding: 10px;
@@ -1112,16 +1112,63 @@ footer .footer-rights {
     padding: 8px 15px;
     font-size: 14px;
   }
-  .servicios-contenedor h2 {
-    font-size: large;
+  /* Alineamos las tarjetas en columna */
+  .servicios-contenedor .tarjetas {
+    flex-direction: column; /* Pasa las tarjetas a una columna */
+    align-items: center; /* Centra las tarjetas */
+    gap: 2rem; /* Espacio entre las tarjetas */
   }
-  .servicios-contenedor h2 .tarjeta-servicio {
-    width: 100%;
+  /* Ajustamos el tamaño de las tarjetas */
+  .servicios-contenedor .tarjetas .tarjeta-servicio {
+    width: 100%; /* Las tarjetas ocupan el 100% del ancho disponible */
+    max-width: 300px; /* Limita el ancho máximo */
+    padding: 1rem;
   }
-  .servicios-contenedor h2 .tarjeta-servicio h3 {
-    font-size: small;
+  /* Ajustamos el tamaño de la imagen dentro de las tarjetas a más pequeñas */
+  .servicios-contenedor .tarjetas .tarjeta-servicio .imagen-servicio {
+    width: 80px; /* Imagen aún más pequeña */
+    height: 80px; /* Imagen aún más pequeña */
+    object-fit: cover; /* Ajusta la imagen al contenedor sin deformar */
   }
-  /*pagina*/
+  /* Reducción de tamaño del título en la tarjeta */
+  .servicios-contenedor .tarjetas .tarjeta-servicio h3 {
+    font-size: 1.2rem; /* Tamaño más pequeño en dispositivos pequeños */
+  }
+  /* Reducimos el tamaño del título en la tarjeta */
+  .servicios-contenedor .tarjetas .tarjeta-servicio h3 {
+    font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+    margin-top: 1rem;
+  }
+  .grid-galeria {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px;
+  }
+  .grid-galeria img:nth-child(1),
+  .grid-galeria img:nth-child(2),
+  .grid-galeria img:nth-child(3),
+  .grid-galeria img:nth-child(4),
+  .grid-galeria img:nth-child(5) {
+    grid-column: span 1;
+    grid-row: auto;
+  }
+  .fundadores .seccion-fundadores {
+    display: flex;
+    flex-direction: column; /* Apilar los fundadores en columna */
+    align-items: center;
+    gap: 20px;
+  }
+  .fundadores .seccion-fundadores .resumen-julian,
+  .fundadores .seccion-fundadores .resumen-alejandro {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .fundadores .seccion-fundadores h3 {
+    font-size: 1.2rem;
+  }
+  .fundadores .seccion-fundadores p {
+    font-size: 0.9rem;
+  }
+  /*paginas*/
   .servicios,
   .proyectos,
   .nosotros {
@@ -1129,8 +1176,11 @@ footer .footer-rights {
     margin: 20px auto;
     padding: 15px;
   }
-  .servicios h2,
-  .proyectos h2,
+  .nosotros .nosotros-imagen {
+    display: none; /* Ocultar la imagen en pantallas de 420px o menos */
+  }
+  .servicios h1,
+  .proyectos h1,
   .nombre h2 {
     font-size: 18px;
     padding: 10px;
@@ -1140,6 +1190,9 @@ footer .footer-rights {
   .tarjeta-nosotros p {
     font-size: 14px;
     line-height: 1.4;
+  }
+  .servicios .servicios-grid {
+    grid-template-columns: 1fr; /* Una sola columna */
   }
   .formulario input,
   .formulario textarea {
